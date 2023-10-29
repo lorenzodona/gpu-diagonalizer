@@ -1,6 +1,5 @@
 # gpu-diagonalizer
-This repository contains a modified version of the diag_lapack.f library to offload on GPUs linear algebra operations.
-The offloading strategy reported here is based on OpenACC directives.
+This repository contains a modified version of the original diag_lapack.f library designed to exploit GPUs for performing linear algebra operations, including matrix diagonalization, matrix-matrix, and matrix-vector multiplications within the CRYSTAL code. The offloading strategy reported here is based on OpenACC directives. This file is currently under development and has only been tested on NVIDIA Ampere GPUs. It is intended to replace the file with the same name in the public version of the CRYSTAL23 code.
 
 # Leonardo GPU partition scaling
 ![Alt text](Leonardo_timing_SiO2_X4.png "Leonardo GPU partition scaling")
